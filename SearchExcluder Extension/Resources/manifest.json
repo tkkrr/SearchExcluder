@@ -2,8 +2,8 @@
     "manifest_version": 2,
     "default_locale": "en",
 
-    "name": "__MSG_extension_name__",
-    "description": "__MSG_extension_description__",
+    "name": "Search Excluder",
+    "description": "Exclude domain site from your search list",
     "version": "1.0",
 
     "icons": {
@@ -20,7 +20,7 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [ "*://google.com/*" ]
     }],
 
     "browser_action": {
@@ -33,5 +33,7 @@
         }
     },
 
-    "permissions": [ ]
+    "permissions": [
+        "storage"
+    ]
 }
